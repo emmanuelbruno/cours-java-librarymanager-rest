@@ -14,9 +14,9 @@
         </dependency>
 
         <dependency>
-            <groupId>fr.univtln.bruno.d14</groupId>
-            <artifactId>exempleihm</artifactId>
-            <version>1.0-SNAPSHOT</version>
+	  <groupId>fr.univtln.bruno.coursjava.librarymanager</groupId>
+	  <artifactId>librarymanager-simplegui</artifactId>
+	  <version>1.0-SNAPSHOT</version>
         </dependency>
 
         <!-- uncomment this to get JSON support: -->
