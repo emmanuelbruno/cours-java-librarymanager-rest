@@ -9,8 +9,8 @@ import java.util.List;
 
 // The Java class will be hosted at the URI path "/myresource"
 @Path("/biblio")
-//@Produces({"application/json", "application/xml"})
-@Produces("application/json")
+@Produces({"application/json", "application/xml"})
+//@Produces("application/json")
 public class Bibliotheque {
 
     private final static ModeleBibliotheque modeleBibliotheque = new ModeleBibliotheque();
