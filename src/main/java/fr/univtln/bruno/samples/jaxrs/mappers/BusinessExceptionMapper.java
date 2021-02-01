@@ -8,6 +8,7 @@ import jakarta.ws.rs.ext.Provider;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 
+@SuppressWarnings("unused")
 @Provider
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class BusinessExceptionMapper implements ExceptionMapper<BusinessException> {

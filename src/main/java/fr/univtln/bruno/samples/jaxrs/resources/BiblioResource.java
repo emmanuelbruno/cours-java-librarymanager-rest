@@ -14,8 +14,9 @@ import java.util.Collection;
 @Path("biblio")
 @Produces({MediaType.APPLICATION_JSON, MediaType.TEXT_XML})
 public class BiblioResource {
-    private static BiblioModel modeleBibliotheque = BiblioModel.of();
+    private static final BiblioModel modeleBibliotheque = BiblioModel.of();
 
+    @SuppressWarnings("SameReturnValue")
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String sayHello() {
@@ -51,6 +52,7 @@ public class BiblioResource {
     }
 
     @DELETE
+    @Path("auteurs")
     public void supprimerAuteurs() {
         modeleBibliotheque.supprimerAuteurs();
     }

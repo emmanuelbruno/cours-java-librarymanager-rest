@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @Getter
 public class BusinessException extends Exception {
-    Response.Status status;
+    final Response.Status status;
 
     public BusinessException(Response.Status status) {
         super(status.getReasonPhrase());

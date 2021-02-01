@@ -9,12 +9,11 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
+@SuppressWarnings("unused")
 @Provider
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@AllArgsConstructor
-@NoArgsConstructor
 public class GenericExceptionMapper implements ExceptionMapper<Exception> {
-    Response.Status status = Response.Status.INTERNAL_SERVER_ERROR;
+    final Response.Status status = Response.Status.INTERNAL_SERVER_ERROR;
 
     public Response toResponse(Exception ex) {
         return Response.status(status)
