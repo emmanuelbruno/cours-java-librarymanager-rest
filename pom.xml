@@ -50,11 +50,6 @@
 
         <dependency>
             <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-jaxb</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
             <artifactId>jersey-media-json-jackson</artifactId>
         </dependency>
         <dependency>
@@ -126,7 +121,6 @@
     </build>
     <properties>
         <jersey.version>3.0.1</jersey.version>
-        <jaxb-api.version>2.3.3</jaxb-api.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
